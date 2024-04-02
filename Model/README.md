@@ -14,8 +14,8 @@ Git LFS (Large File Storage) should be installed on your system :
 ```
 sudo apt-get install git-lfs
 ```
-Next you should create an account in [Hyperlinks]https://huggingface.co/
-Then generate an access token in Setttings page [Hyperlinks]https://huggingface.co/settings/tokens
+Next you should create an account in https://huggingface.co/
+Then generate an access token in Setttings page https://huggingface.co/settings/tokens
 This token will enable you to download the Model locally.
 Now clone the models locally by running:
 
@@ -36,5 +36,5 @@ git lfs pull
 
 ## Need more info
 
-SBERT.net ==> [Hyperlinks]https://www.sbert.net/
-Embeddings Model repo ==> [Hyperlinks] https://huggingface.co/sentence-transformers/all-mpnet-base-v2?library=transformers
+SBERT.net ==> https://www.sbert.net/
+Embeddings Model repo ==> https://huggingface.co/sentence-transformers/all-mpnet-base-v2?library=transformers
