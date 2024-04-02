@@ -1,0 +1,1 @@
+pip install Flask Flask-Cors numpy sentence-transformers pymongo pyttsx3 langdetect openai
