@@ -79,7 +79,7 @@ function sendMessage() {
       window.dotsGoingUp = false;
   }, 250);
 
-  fetch('http://localhost:3010/message', {
+  fetch('https://localhost:3010/message', {
     method: 'POST',
     headers: {
       accept: 'application.json',
@@ -101,7 +101,7 @@ function sendAudioMessage(audioData) {
   const formData = new FormData();
   formData.append('file', audioData, 'message.wav');
 
-  fetch('http://localhost:3010/transcribe_audio', {
+  fetch('https://localhost:3010/transcribe_audio', {
     method: 'POST',
     body: formData
   }).then(response => response.json())
@@ -131,7 +131,7 @@ function sendAudioMessage(audioData) {
 }
 
 function getBotResponse(message) {
-  fetch('http://localhost:3010/message', {
+  fetch('https://localhost:3010/message', {
     method: 'POST',
     headers: {
       accept: 'application.json',

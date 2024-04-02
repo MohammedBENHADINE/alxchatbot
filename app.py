@@ -221,7 +221,7 @@ def message():
     print(f"{ip_address} - - {current_time} Chatbot Response: {response}")
 
     # Updated this line
-    return jsonify({'message': response, 'audio': f'http://localhost:3010/audio_files/{filename}'})
+    return jsonify({'message': response, 'audio': f'https://localhost:3010/audio_files/{filename}'})
 
 
 @app.route('/transcribe_audio', methods=['POST'])
@@ -255,7 +255,7 @@ def transcribe_audio():
     print(f"{ip_address} - - {current_time} User Input (Audio): {audio_message}")
 
     # Updated this line
-    return jsonify({'transcript': audio_message, 'audio': f'http://localhost:3010/audio_files/{filename}'})
+    return jsonify({'transcript': audio_message, 'audio': f'https://localhost:3010/audio_files/{filename}'})
 
 
 @app.route('/audio_files/<filename>')
@@ -264,4 +264,5 @@ def serve_audio_file(filename):
 
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=3010)
+    ssl_context = ('server.crt', 'server.key')
+    app.run(host="192.168.10.3", port=3010, ssl_context=ssl_context)

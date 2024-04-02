@@ -5,7 +5,9 @@ This is a sentence-transformers model: It maps sentences & paragraphs to a 768 d
 ## What's a SentenceTransformers ?
 
 SentenceTransformers is a Python framework for state-of-the-art sentence, text and image embeddings.
-You can use this framework to compute sentence / text embeddings for more than 100 languages. These embeddings can then be compared e.g. with cosine-similarity to find sentences with a similar meaning. This can be useful for semantic textual similarity, semantic search, or paraphrase mining.
+You can use this framework to compute sentence / text embeddings for more than 100 languages. 
+
+These embeddings can then be compared e.g. with cosine-similarity to find sentences with a similar meaning. This can be useful for semantic textual similarity, semantic search, or paraphrase mining.
 
 ## Downloading models
  
